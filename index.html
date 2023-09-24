@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale=1.0>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Clock</title>
+    <link rel="icon" type="images/x-icon" href="assets/logo.png"/>
+</head>
+
+<body>
+    <!---------------------------------Header--------------------------------->
+    <div class="box">
+        <header class="nav-bar">
+            <div class="logo"></div>
+            <div class="nav-bar-ops" id="navLinks">
+                <i class="fa fa-times nav-menu-icon"  onclick="hideMenu()"></i>
+                <ul>
+                    <div class="b">
+                        <div class="link">
+                            <li><a href="index.html" class="active">HOME</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">CONTACT</a></li> 
+                        </div>
+                        <div class="icon">
+                        <li><a href="https://www.instagram.com/yashgupta7373" target="_blank" class="fa fa-instagram nav-icon"></a></li>
+                        <li><a href="https://www.linkedin.com/yashgupta7373" target="_blank" class="fa fa-linkedin nav-icon"></a></li>
+                        <li><a href="https://www.twitter.com/yashgupta7373" target="_blank" class="fa fa-twitter nav-icon"></a></li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <i class="fa fa-bars nav-menu-icon" onclick="showMenu()"></i>
+        </header>
+        <!-- Content -->
+        <div class="box2">
+            <div class="frame">
+                <div id="time">
+                </div>
+                <div id="date">
+                </div>
+                <div class="bottom">
+                    <p id="country">INDIAN TIME</p>
+                    <select>
+                        <option value="">India</option>
+                        <option value="">New York</option>
+                        <option value="">London</option>
+                        <option value="">Tokyo</option>
+                        <option value="">Nepal</option>
+                        <option value="">Pakistan</option>
+                        <option value="">South Korea</option>
+                        <option value="">United Kingdom</option>
+                    </select>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i> yashgupta7373</a>
+        </footer>
+    </div>
+    <!-- <div class="box">   </div> -->
+    <!-- Link external javaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>

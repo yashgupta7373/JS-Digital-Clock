@@ -1,0 +1,237 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.37), rgba(4, 9, 30, 0.363)),
+    url(assets/bg-img.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+/* =============== Header =============== */
+.box{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.nav-bar {
+  width: 100%;
+  height: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 5px 5px 5px;
+  padding: 5px 50px 5px 20px;
+  border-radius: 30px;
+  box-shadow: inset 0px 100px 50px rgba(255, 255, 255, 0.226), 0px 0px 10px rgba(103, 6, 116, 0.671);
+  border: 2px solid rgba(250, 250, 250, 0.233);
+  color: white;
+  backdrop-filter: blur(10px);
+}
+.b{
+  display: flex;
+  gap: 2vw;
+}
+.link{
+  display: flex;
+  gap: 2vw;
+}
+.icon{
+  display: flex;
+  gap: 2vw;
+}
+.nav-bar-ops li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  background-image: url("assets/logo.png");
+  height: 5vw;
+  width: 5vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.nav-bar-ops ul {
+  list-style: none;  
+}
+.link li a {
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 25px;
+  transition: 0.8s;
+  font-size: 1.2vmax;
+}
+.link li a:hover {
+  background-color: rgba(255, 255, 255, 0.438);
+  padding: 10px;
+  border-radius: 25px;
+  color: rgb(103, 6, 116);
+  box-shadow: 0px 0px 10px rgba(103, 6, 116, 0.5);
+}
+.nav-icon{
+  text-decoration: none;
+  color: white;
+    transition: 1s;
+    padding: 2.7px;
+    font-size: 1.2vmax;
+}
+.nav-icon:hover{
+    cursor: pointer;
+    color: blue;
+    font-size: 1.5vmax;
+    padding: 0px;
+    text-shadow: 0px 0px 10px rgba(103, 6, 116, 0.5);
+}
+
+/* =============== Content =============== */
+.box2{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.frame{
+  background-color: rgba(95, 91, 91, 0.267);
+  width: 65%;
+  border-radius: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.212);
+  padding: 50px;
+  backdrop-filter: blur(10px);
+  font-weight: 900;
+  color: pink;
+  text-align: center;
+  min-width: 200px;
+}
+.frame:hover{
+  box-shadow: 0px 0px 30px rgba(238, 199, 241, 0.712);
+}
+#time{
+  font-size: 5vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+#time:hover{
+  text-shadow: 0px 0px 5px gold;
+}
+#date:hover{
+  text-shadow: 0px 0px 5px gold;
+}
+#date{
+  display: flex;
+  justify-content: center;
+  font-size: 1.5vmax;
+}
+.bottom{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 20px 20px 20px;
+  flex-wrap: wrap;
+}
+.bottom select{
+  background-color: transparent;
+  color: pink;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin: 20px 40px 0px 40px;
+  border-color: rgb(151, 149, 149);
+}
+.bottom select:hover{
+  cursor: pointer;
+}
+.bottom p{
+  margin: 20px 40px 0px 40px;
+  font-size: 1.2vmax;
+}
+footer a{
+  text-decoration: none;
+  color: pink;
+  font-size: 1.2vmax;
+}
+.nav-menu-icon{
+  display: none;
+}
+
+/* =============== Media Query =============== */
+@media(max-width: 600px){
+.nav-bar{
+  width: 100%;
+  height: 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 5px 5px 5px;
+  padding: 5px 50px 5px 20px;
+  border-radius: 30px;
+  box-shadow: none;
+  border: none;
+  color: white;
+  backdrop-filter: none;
+}
+.nav-menu-icon{
+  display: block;
+  cursor: pointer;
+}
+.nav-bar-ops{
+  position: fixed;
+  background-color: #ffffff1f;
+  padding: 25px 60px;
+  border-radius: 30px;
+  box-shadow: inset 0px 100px 50px rgba(255, 255, 255, 0.226), 0px 0px 10px rgba(103, 6, 116, 0.671);
+  border: 2px solid rgba(250, 250, 250, 0.233);
+  color: white;
+  backdrop-filter: blur(10px);
+  opacity: 95%;
+  width: 100vw;
+  top: -300px;
+  right: 0;
+  left: 0;
+  text-align: right;
+  z-index: 2;
+  transition: 1s;
+}
+.b{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.link{
+  display: block;
+}
+.icon{
+  display: flex;
+  justify-content: center;
+}
+.nav-icon{
+  font-size: 10px;
+}
+.nav-bar-ops ul li a{
+  font-size: 10px;
+}
+.nav-bar-ops ul li{
+  padding: 2px;
+}
+.nav-icon{
+  display: flex;
+  justify-content: center;
+}
+.logo{
+  height: 40px;
+  width: 40px;
+}
+}
